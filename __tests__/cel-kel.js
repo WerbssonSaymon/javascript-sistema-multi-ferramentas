@@ -1,5 +1,6 @@
 function celsiusKelvin(celsius){
-    let kelvin = celsius + 273.15;
+    let result = celsius + 273.15;
+    let kelvin = parseFloat(result.toFixed(2))
     return kelvin
 }
 

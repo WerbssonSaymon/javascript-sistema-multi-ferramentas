@@ -9,5 +9,8 @@ describe('testa conversão de fahrenheit para kelvin', () => {
     }),
     test('testa se um valor não é nulo', () => {
         expect(fahrenheitKelvin(10)).not.toBeNull();
+    }),
+    test('testa se um numero não é de um tipo diferente', () => {
+        expect(fahrenheitKelvin(10)).not.toBeNaN();
     });
 })

@@ -9,5 +9,8 @@ describe('testa conversão de kelvin para celsius', () => {
     }),
     test('testa se um valor não é nulo', () => {
         expect(kelvinCelsius(10)).not.toBeNull();
+    }),
+    test('testa se um numero não é de um tipo diferente', () => {
+        expect(kelvinCelsius(10)).not.toBeNaN();
     });
 })

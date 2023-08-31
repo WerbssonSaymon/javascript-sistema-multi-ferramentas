@@ -9,5 +9,8 @@ describe('testa conversão de fahrenheit para celsius', () => {
     }),
     test('testa se um valor não é nulo', () => {
         expect(fahrenheitCelsius(10)).not.toBeNull();
+    }),
+    test('testa se um numero não é de um tipo diferente', () => {
+        expect(fahrenheitCelsius(10)).not.toBeNaN();
     });
 })
