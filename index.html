@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Graus</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <!-- valores dos inputs são requeridos -->
-    <main class="container">
-        <div class="bg-secondary p-5">
+    <main class="container bg-success">
+        <div class="bg-white p-5" id="divOne">
             <form>
                 <div class="row">
                     <div class="col">
-                      <input type="number" class="form-control" required>
+                      <label class="bg-primary">Graus Celsius</label>
+                      <input type="number" class="form-control" id="campoCelsius" required>
                     </div>
                     <div class="col">
-                      <input type="text" class="form-control">
+                      <label class="bg-primary">Graus Fahrenheit</label>
+                      <input type="number" class="form-control" id="resultadoCelFah" readonly>
                     </div>
                 </div>
                 <div class="d-grid gap-2 mt-3">
-                    <button class="btn btn-primary" type="button">Converter</button>
+                    <button class="btn btn-primary" type="button" onclick="celsiusFahrenheit()">Converter</button>
                 </div>
             </form>
         </div>

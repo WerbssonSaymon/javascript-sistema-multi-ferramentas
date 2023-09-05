@@ -1,8 +1,8 @@
 // Função que converte celsius para fahrenheit
-function celsiusFahrenheit(celsius){
-     let fahrenheit = (1.8 * celsius) + 32;
-     return fahrenheit
-}
+// function celsiusFahrenheit(celsius){
+//      let fahrenheit = (1.8 * celsius) + 32;
+//      return fahrenheit
+// }
 
 // Função que converte celsius para kelvin
 function celsiusKelvin(celsius){
@@ -37,3 +37,17 @@ function fahrenheitKelvin(fahrenheit){
      let kelvin = parseFloat(result.toFixed(3))
      return kelvin
 }
+
+// Área de manipulação dos formularios
+
+function celsiusFahrenheit(){
+     let campoCelsius = document.getElementById('campoCelsius').value;
+     let celsius = parseFloat(campoCelsius);
+     if (!isNaN(celsius)) {
+          let fahrenheit = (1.8 * celsius) + 32;
+          document.getElementById('resultadoCelFah').value = fahrenheit;
+     } else {
+          alert('problema com o valor enviado');
+     }
+}
+
