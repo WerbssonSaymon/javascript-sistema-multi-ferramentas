@@ -10,7 +10,7 @@
 <body>
     <!-- valores dos inputs são requeridos -->
     <main class="container bg-success">
-        <div class="bg-white p-5" id="divOne">
+        <div class="bg-white p-5" class="divContainer">
             <form>
                 <div class="row">
                     <div class="col">
@@ -27,11 +27,92 @@
                 </div>
             </form>
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="bg-white p-5" class="divContainer">
+            <form>
+                <div class="row">
+                    <div class="col">
+                      <label class="bg-primary">Graus Celsius</label>
+                      <input type="number" class="form-control" id="campoCelsius2" required>
+                    </div>
+                    <div class="col">
+                      <label class="bg-primary">Graus Kelvin</label>
+                      <input type="number" class="form-control" id="resultadoCelKel" readonly>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3">
+                    <button class="btn btn-primary" type="button" onclick="celsiusKelvin()">Converter</button>
+                </div>
+            </form>
+        </div>
+        <div class="bg-white p-5" class="divContainer">
+            <form>
+                <div class="row">
+                    <div class="col">
+                      <label class="bg-primary">Graus Kelvin</label>
+                      <input type="number" class="form-control" id="campoKelvin" required>
+                    </div>
+                    <div class="col">
+                      <label class="bg-primary">Graus Fahrenheit</label>
+                      <input type="number" class="form-control" id="resultadoKelFah" readonly>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3">
+                    <button class="btn btn-primary" type="button" onclick="kelvinFahrenheit()">Converter</button>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div class="bg-white p-5" class="divContainer">
+            <form>
+                <div class="row">
+                    <div class="col">
+                      <label class="bg-primary">Graus Kelvin</label>
+                      <input type="number" class="form-control" id="campoKelvin2" required>
+                    </div>
+                    <div class="col">
+                      <label class="bg-primary">Graus Celsius</label>
+                      <input type="number" class="form-control" id="resultadoKelCel" readonly>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3">
+                    <button class="btn btn-primary" type="button" onclick="kelvinCelsius()">Converter</button>
+                </div>
+            </form>
+        </div>
+        <div class="bg-white p-5" class="divContainer">
+            <form>
+                <div class="row">
+                    <div class="col">
+                      <label class="bg-primary">Graus Fahrenheit</label>
+                      <input type="number" class="form-control" id="campoFahrenheit" required>
+                    </div>
+                    <div class="col">
+                      <label class="bg-primary">Graus Celsius</label>
+                      <input type="number" class="form-control" id="resultadoFahCel" readonly>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3">
+                    <button class="btn btn-primary" type="button" onclick="fahrenheitCelsius()">Converter</button>
+                </div>
+            </form>
+        </div>
+        <div class="bg-white p-5" class="divContainer">
+            <form>
+                <div class="row">
+                    <div class="col">
+                      <label class="bg-primary">Graus Fahrenheit</label>
+                      <input type="number" class="form-control" id="campoFahrenheit2" required>
+                    </div>
+                    <div class="col">
+                      <label class="bg-primary">Graus Kelvin</label>
+                      <input type="number" class="form-control" id="resultadoFahKel" readonly>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3">
+                    <button class="btn btn-primary" type="button" onclick="fahrenheitKelvin()">Converter</button>
+                </div>
+            </form>
+        </div>
     </main>
     
     <script type="text/javascript" src="conversor.js"></script>

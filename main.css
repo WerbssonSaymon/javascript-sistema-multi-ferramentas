@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-#divOne form label{
+label {
     width: 100%;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -13,13 +13,13 @@
     font-size: 1.5rem;
 }
 
-#divOne form input {
+.divContainer form input {
     border: 1px solid rgb(0, 123, 255);
     color: rgb(0, 123, 255);
     font-size: 2rem;
     text-align: center;
 }
 
-#divOne form button {
+.divContainer form button {
     font-size: 1.5rem;
 }
