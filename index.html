@@ -9,42 +9,57 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header class="container">
+        <h1 class="text-center">Conversor de temperatura</h1>
+    </header>
     <nav class="container">
         <div class="row">
-            <div class="col">
-                <p>Celsius => Fahrenheit</p>
-                <button class="btn btn-success" onclick="exibeConversor('conversorUm')">mostrar</button>
-                <button class="btn btn-danger" onclick="escondeConversor('conversorUm')">esconder</button>
+            <div class="col border border-dark p-2">
+                <p class="text-center">Celsius => Fahrenheit</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-success" onclick="exibeConversor('conversorUm')">mostrar</button>
+                    <button class="btn btn-danger" onclick="escondeConversor('conversorUm')">esconder</button>
+                </div>
             </div>
-            <div class="col">
-                <p>Celsius => Kelvin</p>
-                <button class="btn btn-success" onclick="exibeConversor('conversorDois')">mostrar</button>
-                <button class="btn btn-danger" onclick="escondeConversor('conversorDois')">esconder</button>
+            <div class="col border border-dark p-2">
+                <p class="text-center">Celsius => Kelvin</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-success" onclick="exibeConversor('conversorDois')">mostrar</button>
+                    <button class="btn btn-danger" onclick="escondeConversor('conversorDois')">esconder</button>
+                </div>
             </div>
-            <div class="col">
-                <p>Kelvin => Fahrenheit</p>
-                <button class="btn btn-success" onclick="exibeConversor('conversorTres')">mostrar</button>
-                <button class="btn btn-danger" onclick="escondeConversor('conversorTres')">esconder</button>
+            <div class="col border border-dark p-2">
+                <p class="text-center">Kelvin => Fahrenheit</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-success" onclick="exibeConversor('conversorTres')">mostrar</button>
+                    <button class="btn btn-danger" onclick="escondeConversor('conversorTres')">esconder</button>
+                </div>
             </div>
-            <div class="col">
-                <p>Kelvin => Celsius</p>
-                <button class="btn btn-success" onclick="exibeConversor('conversorQuatro')">mostrar</button>
-                <button class="btn btn-danger" onclick="escondeConversor('conversorQuatro')">esconder</button>
+            <div class="col border border-dark p-2">
+                <p class="text-center">Kelvin => Celsius</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-success" onclick="exibeConversor('conversorQuatro')">mostrar</button>
+                    <button class="btn btn-danger" onclick="escondeConversor('conversorQuatro')">esconder</button>
+                </div>
             </div>
-            <div class="col">
-                <p>Fahrenheit => Celsius</p>
-                <button class="btn btn-success" onclick="exibeConversor('conversorCinco')">mostrar</button>
-                <button class="btn btn-danger" onclick="escondeConversor('conversorCinco')">esconder</button>
+            <div class="col border border-dark p-2">
+                <p class="text-center">Fahrenheit => Celsius</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-success" onclick="exibeConversor('conversorCinco')">mostrar</button>
+                    <button class="btn btn-danger" onclick="escondeConversor('conversorCinco')">esconder</button>
+                </div>
             </div>
-            <div class="col">
-                <p>Fahrenheit => Kelvin</p>
-                <button class="btn btn-success" onclick="exibeConversor('conversorSeis')">mostrar</button>
-                <button class="btn btn-danger" onclick="escondeConversor('conversorSeis')">esconder</button>
+            <div class="col border border-dark p-2">
+                <p class="text-center">Fahrenheit => Kelvin</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-success" onclick="exibeConversor('conversorSeis')">mostrar</button>
+                    <button class="btn btn-danger" onclick="escondeConversor('conversorSeis')">esconder</button>
+                </div>
             </div>
         </div>
     </nav>
-    <main class="container bg-success">
-        <div class="bg-white p-5 divContainer conversorUm">
+    <main class="container">
+        <div class="bg-white p-5 mt-2 border border-dark divContainer conversorUm">
             <form class="conversorUm">
                 <div class="row conversorUm">
                     <div class="col conversorUm">
@@ -61,7 +76,7 @@
                 </div>
             </form>
         </div>
-        <div class="bg-white p-5 divContainer conversorDois">
+        <div class="bg-white p-5 mt-2 border border-dark divContainer conversorDois">
             <form class="conversorDois">
                 <div class="row conversorDois">
                     <div class="col conversorDois">
@@ -78,7 +93,7 @@
                 </div>
             </form>
         </div>
-        <div class="bg-white p-5 divContainer conversorTres">
+        <div class="bg-white p-5 mt-2 border border-dark divContainer conversorTres">
             <form class="conversorTres">
                 <div class="row conversorTres">
                     <div class="col conversorTres">
@@ -95,7 +110,7 @@
                 </div>
             </form>
         </div>
-        <div class="bg-white p-5 divContainer conversorQuatro">
+        <div class="bg-white p-5 mt-2 border border-dark divContainer conversorQuatro">
             <form class="conversorQuatro">
                 <div class="row conversorQuatro">
                     <div class="col conversorQuatro">
@@ -112,7 +127,7 @@
                 </div>
             </form>
         </div>
-        <div class="bg-white p-5 divContainer conversorCinco">
+        <div class="bg-white p-5 mt-2 border border-dark divContainer conversorCinco">
             <form class="conversorCinco">
                 <div class="row conversorCinco">
                     <div class="col conversorCinco">
@@ -129,7 +144,7 @@
                 </div>
             </form>
         </div>
-        <div class="bg-white p-5 divContainer conversorSeis">
+        <div class="bg-white p-5 mt-2 border border-dark divContainer conversorSeis">
             <form class="conversorSeis">
                 <div class="row conversorSeis">
                     <div class="col conversorSeis">
