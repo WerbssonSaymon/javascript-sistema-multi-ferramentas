@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Graus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../main.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="container">
+        <h1 class="text-center">Conversor de temperatura</h1>
+    </header>
+    <nav class="container">
+        <div class="row">
+            <div class="col border border-dark p-2">
+                <p class="text-center">Celsius => Fahrenheit</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-success" onclick="exibeConversor('conversorUm')">mostrar</button>
+                    <button class="btn btn-danger" onclick="escondeConversor('conversorUm')">esconder</button>
+                </div>
+            </div>
+            <div class="col border border-dark p-2">
+                <p class="text-center">Celsius => Kelvin</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-success" onclick="exibeConversor('conversorDois')">mostrar</button>
+                    <button class="btn btn-danger" onclick="escondeConversor('conversorDois')">esconder</button>
+                </div>
+            </div>
+            <div class="col border border-dark p-2">
+                <p class="text-center">Kelvin => Fahrenheit</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-success" onclick="exibeConversor('conversorTres')">mostrar</button>
+                    <button class="btn btn-danger" onclick="escondeConversor('conversorTres')">esconder</button>
+                </div>
+            </div>
+            <div class="col border border-dark p-2">
+                <p class="text-center">Kelvin => Celsius</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-success" onclick="exibeConversor('conversorQuatro')">mostrar</button>
+                    <button class="btn btn-danger" onclick="escondeConversor('conversorQuatro')">esconder</button>
+                </div>
+            </div>
+            <div class="col border border-dark p-2">
+                <p class="text-center">Fahrenheit => Celsius</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-success" onclick="exibeConversor('conversorCinco')">mostrar</button>
+                    <button class="btn btn-danger" onclick="escondeConversor('conversorCinco')">esconder</button>
+                </div>
+            </div>
+            <div class="col border border-dark p-2">
+                <p class="text-center">Fahrenheit => Kelvin</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-success" onclick="exibeConversor('conversorSeis')">mostrar</button>
+                    <button class="btn btn-danger" onclick="escondeConversor('conversorSeis')">esconder</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="bg-white p-5 mt-2 border border-dark divContainer conversorUm">
+            <form class="conversorUm">
+                <div class="row conversorUm">
+                    <div class="col conversorUm">
+                      <label class="bg-primary conversorUm">Graus Celsius</label>
+                      <input type="number" class="form-control conversorUm" id="campoCelsius" required>
+                    </div>
+                    <div class="col conversorUm">
+                      <label class="bg-primary conversorUm">Graus Fahrenheit</label>
+                      <input type="number" class="form-control conversorUm" id="resultadoCelFah" readonly>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3 conversorUm">
+                    <button class="btn btn-primary conversorUm" type="button" onclick="celsiusFahrenheit()">Converter</button>
+                </div>
+            </form>
+        </div>
+        <div class="bg-white p-5 mt-2 border border-dark divContainer conversorDois">
+            <form class="conversorDois">
+                <div class="row conversorDois">
+                    <div class="col conversorDois">
+                      <label class="bg-primary conversorDois">Graus Celsius</label>
+                      <input type="number" class="form-control conversorDois" id="campoCelsius2" required>
+                    </div>
+                    <div class="col conversorDois">
+                      <label class="bg-primary conversorDois">Graus Kelvin</label>
+                      <input type="number" class="form-control conversorDois" id="resultadoCelKel" readonly>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3 conversorDois">
+                    <button class="btn btn-primary conversorDois" type="button" onclick="celsiusKelvin()">Converter</button>
+                </div>
+            </form>
+        </div>
+        <div class="bg-white p-5 mt-2 border border-dark divContainer conversorTres">
+            <form class="conversorTres">
+                <div class="row conversorTres">
+                    <div class="col conversorTres">
+                      <label class="bg-primary conversorTres">Graus Kelvin</label>
+                      <input type="number" class="form-control conversorTres" id="campoKelvin" required>
+                    </div>
+                    <div class="col conversorTres">
+                      <label class="bg-primary conversorTres">Graus Fahrenheit</label>
+                      <input type="number" class="form-control conversorTres" id="resultadoKelFah" readonly>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3 conversorTres">
+                    <button class="btn btn-primary conversorTres" type="button" onclick="kelvinFahrenheit()">Converter</button>
+                </div>
+            </form>
+        </div>
+        <div class="bg-white p-5 mt-2 border border-dark divContainer conversorQuatro">
+            <form class="conversorQuatro">
+                <div class="row conversorQuatro">
+                    <div class="col conversorQuatro">
+                      <label class="bg-primary conversorQuatro">Graus Kelvin</label>
+                      <input type="number" class="form-control conversorQuatro" id="campoKelvin2" required>
+                    </div>
+                    <div class="col conversorQuatro">
+                      <label class="bg-primary conversorQuatro">Graus Celsius</label>
+                      <input type="number" class="form-control conversorQuatro" id="resultadoKelCel" readonly>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3 conversorQuatro">
+                    <button class="btn btn-primary conversorQuatro" type="button" onclick="kelvinCelsius()">Converter</button>
+                </div>
+            </form>
+        </div>
+        <div class="bg-white p-5 mt-2 border border-dark divContainer conversorCinco">
+            <form class="conversorCinco">
+                <div class="row conversorCinco">
+                    <div class="col conversorCinco">
+                      <label class="bg-primary conversorCinco">Graus Fahrenheit</label>
+                      <input type="number" class="form-control conversorCinco" id="campoFahrenheit" required>
+                    </div>
+                    <div class="col conversorCinco">
+                      <label class="bg-primary conversorCinco">Graus Celsius</label>
+                      <input type="number" class="form-control conversorCinco" id="resultadoFahCel" readonly>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3 conversorCinco">
+                    <button class="btn btn-primary conversorCinco" type="button" onclick="fahrenheitCelsius()">Converter</button>
+                </div>
+            </form>
+        </div>
+        <div class="bg-white p-5 mt-2 border border-dark divContainer conversorSeis">
+            <form class="conversorSeis">
+                <div class="row conversorSeis">
+                    <div class="col conversorSeis">
+                      <label class="bg-primary conversorSeis">Graus Fahrenheit</label>
+                      <input type="number" class="form-control conversorSeis" id="campoFahrenheit2" required>
+                    </div>
+                    <div class="col conversorSeis">
+                      <label class="bg-primary conversorSeis">Graus Kelvin</label>
+                      <input type="number" class="form-control conversorSeis" id="resultadoFahKel" readonly>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 mt-3 conversorSeis">
+                    <button class="btn btn-primary conversorSeis" type="button" onclick="fahrenheitKelvin()">Converter</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
