@@ -1,4 +1,4 @@
-const fahrenheitCelsius = require('./fah-cel');
+const {fahrenheitCelsius} = require('../../converor_temperatura/conversor_core');
 
 describe('testa conversão de fahrenheit para celsius', () => {
     test('testa se 20 graus fahrenheit não é 56 celsius', () => {

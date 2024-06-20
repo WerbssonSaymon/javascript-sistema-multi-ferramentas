@@ -1,4 +1,4 @@
-const celsiusKelvin = require('./cel-kel');
+const {celsiusKelvin} = require('../../converor_temperatura/conversor_core');
 
 describe('testa conversão de celsius para kelvin', () => {
     test('testa se 20 graus celsius não é 56 kelvin', () => {

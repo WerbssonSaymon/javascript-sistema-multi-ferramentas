@@ -1,4 +1,4 @@
-const kelvinFahrenheit = require('./kel-fah');
+const {kelvinFahrenheit} = require('../../converor_temperatura/conversor_core');
 
 describe('testa conversão de kelvin para fahrenheit', () => {
     test('testa se 20 graus kelvin não é 56 fahrenheit', () => {
