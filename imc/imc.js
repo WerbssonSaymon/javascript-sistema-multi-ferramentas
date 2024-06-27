@@ -5,3 +5,12 @@ function imcCalc(altura, peso){
 }
 
 module.exports = imcCalc;
+
+function calcularIMC() {
+    let altura = parseFloat($("#altura").val());
+    let peso = parseFloat($("#peso").val());
+    let resultado = imcCalc(altura, peso);
+    $("#resultado").text("Seu IMC é: " + resultado);
+    console.log(altura, resultado)
+}
+

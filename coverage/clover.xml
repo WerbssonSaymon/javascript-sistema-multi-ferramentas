@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1718900145361" clover="3.2.0">
-  <project timestamp="1718900145361" name="All files">
-    <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="7" elements="29" coveredelements="29" complexity="0" loc="22" ncloc="22" packages="2" files="2" classes="2"/>
+<coverage generated="1719503563355" clover="3.2.0">
+  <project timestamp="1719503563356" name="All files">
+    <metrics statements="31" coveredstatements="26" conditionals="0" coveredconditionals="0" methods="9" coveredmethods="8" elements="40" coveredelements="34" complexity="0" loc="31" ncloc="31" packages="2" files="3" classes="3"/>
     <package name="converor_temperatura">
       <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
       <file name="conversor_core.js" path="C:\Users\WINDOWS\Documents\saymon-dev\repositorio-github\jest-conversor-temperatura\converor_temperatura\conversor_core.js">
@@ -27,12 +27,24 @@
       </file>
     </package>
     <package name="imc">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="13" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
       <file name="imc.js" path="C:\Users\WINDOWS\Documents\saymon-dev\repositorio-github\jest-conversor-temperatura\imc\imc.js">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="9" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+      <file name="script.js" path="C:\Users\WINDOWS\Documents\saymon-dev\repositorio-github\jest-conversor-temperatura\imc\script.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
       </file>
     </package>
