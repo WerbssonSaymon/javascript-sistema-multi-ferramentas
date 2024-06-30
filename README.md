@@ -6,7 +6,12 @@
 ## Ferramentas finalizadas
 
 - Conversor de temperatura
+- Calculadora IMC
 
 ## Ferramentas em desenvolvimento
 
-- Calculadora IMC
+- Calculadora de media escolar
+- Sorteio de numeros
+- Conversor de hora
+- Conversor de distância
+- Simulador de dados
