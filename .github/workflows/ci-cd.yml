@@ -31,10 +31,11 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-
 
-    - run: rm -f package-lock.json
+    - run: npm cache clean --force
     - run: npm install
     - run: chmod +x ./node_modules/.bin/jest
     - run: npm test
+
 
 
 
